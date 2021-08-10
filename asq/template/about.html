@@ -529,10 +529,8 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
         <div class="row">
             <div class="col-md-2 col-sm-2 hidden-xs">
                 <div class="bar__module">
-
                     <a href="{% url 'app:index' %}" class="logo-holder">
-                        <img class="logo logo-dark" alt="" src="{% static 'media/favicon.png' %}"/>
-                        <img class="logo logo-light" alt="" src="{% static 'media/favicon.png' %}"/>
+                        <img class="" alt="" src="{% static 'media/favicon.png' %}"/>
                     </a>
                 </div><!--end module-->
             </div>
@@ -559,7 +557,7 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
                                 href="{% url 'app:project' %}" style="color:#C5B358;">Projects</a></li>
                         <li id="menu-item-4108"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5383"><a
-                                href="#about" style="color:#C5B358;">About</a></li>
+                                href="{% url 'app:about' %}" style="color:#C5B358;">About</a></li>
 
                     </ul>
 
